@@ -4,7 +4,32 @@
 	//918 -> 8
 
 Console.Clear();
-Console.Write("введите число N - ");
+Console.Write("введите трехзначное число N - ");
 int numberA = int.Parse(Console.ReadLine());
-int count = numberA%10;
-Console.WriteLine($"endnumber {count}");
+if(numberA > 99)
+{
+    if( numberA < 1000)
+    {
+      int count = numberA%10;
+      Console.WriteLine($"endnumber {count}");
+    }
+    else
+    {
+    Console.WriteLine("number incorrect");
+    }
+
+}
+else
+{
+    Console.WriteLine("number incorrect");
+}
+
+
+
+//int GetDigitCount(string s)
+//{
+//   if (string.IsNullOrEmpty(s)) throw ...
+//   if (!s.All(char.IsDigit)) throw ...
+// 
+//   return s.Length;
+//}

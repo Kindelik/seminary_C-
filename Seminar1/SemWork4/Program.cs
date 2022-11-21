@@ -9,7 +9,7 @@ int numberA = int.Parse(Console.ReadLine());
 int count = 0;
 if (numberA > 0)
 {
-    count = numberA * (-1);
+    count = -numberA;
     while (count < numberA + 1)
     {
         Console.Write($"{count}, ");
@@ -19,7 +19,7 @@ if (numberA > 0)
 else
 {
     count = numberA;
-     while (count < numberA * (-1) )
+     while (count < -numberA + 1 )
     {
         Console.Write($"{count}, ");
         count++;
