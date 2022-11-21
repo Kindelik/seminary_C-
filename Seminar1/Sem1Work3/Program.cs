@@ -2,7 +2,7 @@
 //3 -> Среда 
 //5 -> Пятница
 
-Console.Clear()
+Console.Clear();
 Console.WriteLine("Hello, User!");
 
 Console.WriteLine("Введите число дня недели");
