@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+Console.WriteLine("Введите число");
+int numberA = Console.ReadLine();
+int numberB = numberA * numberA;
+Console.WriteLine("Квадратный корень", numberA, "=", numberB);
