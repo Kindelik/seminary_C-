@@ -6,18 +6,10 @@
 Console.Clear();
 Console.Write("введите трехзначное число N - ");
 int numberA = int.Parse(Console.ReadLine());
-if(numberA > 99)
+if((numberA > 99)&&(numberA<1000))
 {
-    if( numberA < 1000)
-    {
-      int count = numberA%10;
-      Console.WriteLine($"endnumber {count}");
-    }
-    else
-    {
-    Console.WriteLine("number incorrect");
-    }
-
+   int count = numberA%10;
+   Console.WriteLine($"endnumber {count}");
 }
 else
 {
