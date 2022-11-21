@@ -6,7 +6,7 @@
 Console.Clear();
 Console.Write("введите трехзначное число N - ");
 int numberA = int.Parse(Console.ReadLine());
-if((numberA > 99)&&(numberA<1000))
+if((numberA > 99)&&(numberA<1000))   //&& это "и" || это или не исключающее
 {
    int count = numberA%10;
    Console.WriteLine($"endnumber {count}");
