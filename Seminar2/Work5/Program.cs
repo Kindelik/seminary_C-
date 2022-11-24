@@ -12,7 +12,7 @@ int numberA = int.Parse(Console.ReadLine());
 Console.WriteLine("Enter numberB");
 int numberB = int.Parse(Console.ReadLine());
 
-if ((numberA = numberB*numberB) || (numberB = numberA*numberA))
+if ((numberA == numberB*numberB) || (numberB == numberA*numberA))
 {
 Console.WriteLine($" одно из чисел квадрат другого");
 }
