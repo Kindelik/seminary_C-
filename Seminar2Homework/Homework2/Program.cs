@@ -21,12 +21,12 @@ if (numberA > 99)
     {
         numberThree = (numberThree - (numberThree % 10)) / 10;
     }
-    numberThree = numberThree%10;
+    numberThree = numberThree % 10;
     Console.WriteLine(numberThree);
 }
 else
 {
-Console.WriteLine("This number does not have a third digit");
+    Console.WriteLine("This number does not have a third digit");
 }
 
 
