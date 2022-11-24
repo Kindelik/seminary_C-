@@ -5,8 +5,38 @@
 //918 -> 1
 
 
+// Математическое решение
 
 Console.Clear();
+Console.WriteLine("Enter a three-digit number");
+
+int numberA = Convert.ToInt32(Console.ReadLine());   //ввод числа с терминала
+
+if ((numberA > 99) && (numberA < 1000))
+{
+    int numberTtree = numberA % 10;
+    int numberOne = (numberA - numberTtree) / 10;
+    int numberTwo = numberOne % 10;
+    Console.WriteLine(numberTwo);
+}
+else
+{
+    Console.WriteLine("the number is incorrect");
+}
+
+
+
+
+
+
+
+
+
+
+
+//Решение через перевод в string
+
+/* Console.Clear();
 Console.WriteLine("Enter a three-digit number");
 int numberA =Convert.ToInt32(Console.ReadLine());   //ввод числа с терминала
 if ((numberA>99) && (numberA<1000))                 // проверка на трехзначность
@@ -17,4 +47,4 @@ if ((numberA>99) && (numberA<1000))                 // проверка на т�
 else
 {
 Console.WriteLine("the number is incorrect");
-}
+} */
