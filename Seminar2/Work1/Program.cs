@@ -6,13 +6,13 @@
 
 Console.Clear();
 
-int RandomDigit = new Random().Next(10,100);
+int RandomDigit = new Random().Next(10, 100);
 Console.WriteLine($"random number {RandomDigit}");
 
-int numberA = RandomDigit/10;
-int numberB = RandomDigit%10;
+int numberA = RandomDigit / 10;
+int numberB = RandomDigit % 10;
 
-if(numberA>numberB)   //находим какая цифра больше
+if (numberA > numberB)   //находим какая цифра больше
 {
     Console.WriteLine(numberA);
 }

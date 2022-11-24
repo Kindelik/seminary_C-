@@ -7,15 +7,15 @@
 
 Console.Clear();
 Console.WriteLine("Enter numberA");
-int numberA =int.Parse(Console.ReadLine());
+int numberA = int.Parse(Console.ReadLine());
 
-if ((numberA%23 ==0) && (numberA%7 ==0))
+if ((numberA % 23 == 0) && (numberA % 7 == 0))
 
 {
-Console.WriteLine("кратно");
- }
+    Console.WriteLine("кратно");
+}
 
- else
- {
- Console.WriteLine("не кратно");
- }
+else
+{
+    Console.WriteLine("не кратно");
+}

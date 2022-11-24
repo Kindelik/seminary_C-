@@ -5,22 +5,22 @@
 //16, 4 -> кратно
 Console.Clear();
 Console.WriteLine("Enter numberA");
-int numberA =int.Parse(Console.ReadLine());
+int numberA = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Enter numberB");
-int numberB =int.Parse(Console.ReadLine());
+int numberB = int.Parse(Console.ReadLine());
 
-if (numberB>numberA)
+if (numberB > numberA)
 
 {
-    if (numberB%numberA == 0)
-   {
-    Console.WriteLine($"{numberB} кратно {numberA}");
-   }
-
-     else
+    if (numberB % numberA == 0)
     {
-    Console.WriteLine($"не кратно, остаток {numberB%numberA}");
+        Console.WriteLine($"{numberB} кратно {numberA}");
+    }
+
+    else
+    {
+        Console.WriteLine($"не кратно, остаток {numberB % numberA}");
     }
 }
 
