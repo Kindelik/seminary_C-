@@ -8,7 +8,7 @@
 
 Console.Clear();
 Console.WriteLine("Введите три числа через запятую");
-// Полученные числа загоняем в массив и преобразуем string в int
+//Полученные числа загоняем в массив и преобразуем string в int
 int[] numbers = Array.ConvertAll<string,int>(Console.ReadLine().Split(','), elem => { return System.Convert.ToInt32 (elem);});
 
 Console.WriteLine($"max number {numbers.Max()} ");
