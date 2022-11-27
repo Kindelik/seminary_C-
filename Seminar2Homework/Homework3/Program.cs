@@ -11,6 +11,8 @@ Console.WriteLine("Enter the number indicating the day of the week"); //Введ
 int numberDay = Convert.ToInt32(Console.ReadLine());
 if ((numberDay > 0) & (numberDay < Day.Length + 1))      // проверка на корректность введенного числа
 
+// Вообще задача решается просто через If (numberDay == 6) || (numberDay == 7) 
+// массив тут не нужен
 {
     while (numberDay != Day[index])
     {

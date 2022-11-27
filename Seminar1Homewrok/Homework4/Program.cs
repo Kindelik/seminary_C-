@@ -21,7 +21,7 @@ if (number > 0)
 else
 {
     count = 0;
-    while (count > number)
+    while (count >= number)
     {
         Console.Write($"{count},");
         count = count -2;

@@ -19,7 +19,7 @@ if (numberA > 99)
 {
     while (numberThree > 999)
     {
-        numberThree = (numberThree - (numberThree % 10)) / 10;
+        numberThree = (numberThree - (numberThree % 10)) / 10; // Вычисление остатка не нужно так как / деление с отбрасыванием дробной части
     }
     numberThree = numberThree % 10;
     Console.WriteLine(numberThree);
