@@ -9,11 +9,15 @@ int number = int.Parse(Console.ReadLine());
 int count = 2;
 if (number > 0)
 {
-    while  (count <= number )
+    while (count < number)
     {
         Console.Write($"{count},");
         count = count + 2;
     }
+}
+if (number - 1 != count)
+{
+    Console.Write(number);
 }
 // задача выполнена
 
@@ -24,6 +28,6 @@ else
     while (count >= number)
     {
         Console.Write($"{count},");
-        count = count -2;
+        count = count - 2;
     }
 }
