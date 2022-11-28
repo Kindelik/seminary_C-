@@ -7,18 +7,19 @@ Console.Clear();
 Console.WriteLine("Введите число");
 int number = int.Parse(Console.ReadLine());
 int count = 2;
+int[] array = new int[] {};
 if (number > 0)
 {
-    while (count < number)
+    while (count <= number)
     {
-        Console.Write($"{count},");
+        
+        array = array.Concat(new int[] { count }).ToArray();
         count = count + 2;
+
     }
+ Console.WriteLine(String.Join(",",array));
 }
-if (number - 1 != count)
-{
-    Console.Write(number);
-}
+
 // задача выполнена
 
 // все следующее написано, если введеное число будет отрицательным
