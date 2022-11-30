@@ -33,20 +33,6 @@ else
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Решение через string
 /* 
 Console.Clear();
