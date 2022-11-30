@@ -30,9 +30,6 @@ int ReverseInt(int x)                     // Метод переворота и�
 return b;
 }
 
-
-
-
 Console.Clear();
 
 int number = DataЕntry("Enter a five-digit number");
@@ -71,4 +68,3 @@ if ((number > 9999) && (number < 100000))
     else Console.WriteLine("This is number not a palindrome ");
 }
 else Console.WriteLine("The number is not correct");
-
