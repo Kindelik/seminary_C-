@@ -72,25 +72,3 @@ if ((number > 9999) && (number < 100000))
 }
 else Console.WriteLine("The number is not correct");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
