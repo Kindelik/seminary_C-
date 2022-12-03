@@ -20,6 +20,6 @@ Console.WriteLine("Enter coordinates separated by commas");     // Коорди�
 int[] numbersA = DataЕntry("Enter the coordinates of the point A");
 int[] numbersB = DataЕntry("Enter the coordinates of the point B");
 
-double Distance = Math.Sqrt(Math.Pow(numbersB[0] - numbersA[0], 2) + Math.Pow(numbersB[1] - numbersA[1], 2) + Math.Pow(numbersB[2] - numbersA[2], 2));
+double distance = Math.Sqrt(Math.Pow(numbersB[0] - numbersA[0], 2) + Math.Pow(numbersB[1] - numbersA[1], 2) + Math.Pow(numbersB[2] - numbersA[2], 2));
 
-Console.WriteLine($"Distance between points = {Distance} ");
+Console.WriteLine($"Distance between points = {distance} ");
