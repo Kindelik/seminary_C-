@@ -16,7 +16,7 @@ int NumbPow(int number, int degree)
     int result = 1;
     for (int i = 0; i < degree; i++)
     {
-result = result * number;
+        result = result * number;
     }
     return result;
 }
@@ -28,7 +28,7 @@ int[] twoNumbers = DataЕntry("Введите два числа через за�
 // Используем метод (в котором использован цикл) для вычислений
 int numberPow = NumbPow(twoNumbers[0], twoNumbers[1]);
 //Выводим результат в терминал
-Console.WriteLine($"Number {twoNumbers[0]} to the power of {twoNumbers[1]} = {numberPow}" );
+Console.WriteLine($"Number {twoNumbers[0]} to the power of {twoNumbers[1]} = {numberPow}");
 
 
 

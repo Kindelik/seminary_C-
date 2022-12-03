@@ -13,12 +13,12 @@ int DataЕntry(string str)                                              // Ме�
 
 int SumOfDigits(int numb)
 {
-    if (numb<0) numb = -numb;
+    if (numb < 0) numb = -numb;
     int result = 0;
     for (int i = 0; numb != 0; i++)
     {
-        result = result + numb%10;
-        numb = numb/10;
+        result = result + numb % 10;
+        numb = numb / 10;
     }
     return result;
 }
