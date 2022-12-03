@@ -21,13 +21,13 @@ int ReverseInt(int x)                     // Метод переворота и�
     int i = str.Length;
     int a = x;
     int b = 0;
-    while ( i >0)
+    while (i > 0)
     {
-     b = b*10 + a%10;
-     a= a/10;
-     i--;
+        b = b * 10 + a % 10;
+        a = a / 10;
+        i--;
     }
-return b;
+    return b;
 }
 
 Console.Clear();
