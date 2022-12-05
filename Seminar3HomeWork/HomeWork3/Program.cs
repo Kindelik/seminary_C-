@@ -16,7 +16,7 @@ int DataЕntry(string str)                                              // Ме�
 double InCube(int a)
 {
     double b = Math.Pow(a, 3);
-    // int b = (a*a);
+    // int b = (a*a*a);
 
     return (b);
 }
