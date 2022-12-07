@@ -26,7 +26,8 @@ System.Console.WriteLine('[' + string.Join(",", array) + ']');
 
 System.Console.WriteLine("Enter a number = ");
 int number = int.Parse(Console.ReadLine());
-bool result = false;
+
+bool result = false;  // 1 or 0
 
 for (int i = 0; i < array.Length; i++)
 {
@@ -36,11 +37,11 @@ for (int i = 0; i < array.Length; i++)
         break;
     }
 }
-if (result)
+if (result)  //result == true
 {
     System.Console.WriteLine("yes");
 }
-else
+else    // result == false
 {
     System.Console.WriteLine("no");
 }
