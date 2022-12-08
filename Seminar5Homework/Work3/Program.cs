@@ -9,7 +9,7 @@ double[] FillArray(int number, int leftRange, int rigthRange)            //Ме�
     int index = 0;
     while (index < length)
     {
-        collection[index] = rand.Next(leftRange, rigthRange + 1) + rand.NextDouble(); // Положить новое рандомное дробное число в индекс
+        collection[index] = new Random().Next(leftRange, rigthRange + 1) + new Random().NextDouble(); // Положить новое рандомное дробное число в индекс
         collection[index] = Math.Round(collection[index], 2);    // округляем значения в массиве до сотых долей
         index++;
     }
