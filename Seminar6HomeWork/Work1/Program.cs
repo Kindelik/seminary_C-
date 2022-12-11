@@ -8,13 +8,13 @@
 Console.Clear();
 Console.WriteLine("Введите числа через запятую");
 //Полученные числа загоняем в массив и преобразуем string в int
-int[] numbers =  Console.ReadLine().Split(',').Select(int.Parse).ToArray();
+int[] numbers = Console.ReadLine().Split(',').Select(int.Parse).ToArray();
 
-int quantity =0;  // счетчик положительных чисел
+int quantity = 0;  // счетчик положительных чисел
 
 for (int i = 0; i < numbers.Length; i++)
 {
-    if(numbers[i]>0)
+    if (numbers[i] > 0)
     {
         quantity++;
     }
