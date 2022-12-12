@@ -24,11 +24,11 @@ int[,] TwoDimArray(int rows, int columns, int leftRange, int rigthRange)
 
 void Qvadrat(int[,] array)
 {
-        for (int i = 2; i < array.GetLength(0); i = i+2)
+    for (int i = 2; i < array.GetLength(0); i = i + 2)
     {
-        for (int j = 2; j < array.GetLength(1); j = j+2)
+        for (int j = 2; j < array.GetLength(1); j = j + 2)
         {
-            array[i, j] = array[i,j]*array[i,j];
+            array[i, j] = array[i, j] * array[i, j];
         }
     }
 }

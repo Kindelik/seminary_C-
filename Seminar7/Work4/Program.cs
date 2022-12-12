@@ -27,9 +27,9 @@ int SumDiagonal(int[,] array)
     for (int i = 0; i < array.GetLength(0); i++)
     {
 
-        if (i == j)  sum = sum + array[i,j];
-           
-    j++;
+        if (i == j) sum = sum + array[i, j];
+
+        j++;
     }
     return sum;
 }
