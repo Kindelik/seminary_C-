@@ -33,18 +33,3 @@ else
     Console.WriteLine($"Х = {pointX}");
     Console.WriteLine($"Y = {pointY}");
 }
-
-
-/* int a = arr[1]; k1
-int b = arr[3]; k2
-int c = arr[0]; b1
-int d = arr[2]; b2
-
-if (a == b)
-{
-    Console.WriteLine("Прямые с такими параметрами паралельны");
-}
-else
-{
-    pointX = (double)(k2 - b1) / (k1 - b2);
-    pointY = (double)k1 * (k2 - b1) / (k1 - b2) + b1; */
