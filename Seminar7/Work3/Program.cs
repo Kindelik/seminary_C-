@@ -45,8 +45,8 @@ void PrintTwoDimArray(int[,] array)
     }
 }
 
-int m = 10;
-int n = 10;
+int m = 6;
+int n = 6;
 int leftRange = 0;
 int rigthRange = 9;
 
