@@ -45,7 +45,7 @@ void SearchPosition(int position, int[,] array)  // Метод поиска чи
                     rowsPosition = i;
                     columnsPosition = j;
                     System.Console.WriteLine($"На позиции {position} находится число {array[rowsPosition, columnsPosition]}");
-                    System.Console.WriteLine($"Это число находится в строке {rowsPosition}, cтолбце {columnsPosition}");
+                    System.Console.WriteLine($"Индекс числа {array[rowsPosition, columnsPosition]} => [{rowsPosition},{columnsPosition}]");
                     count++;
                     break;
                 }
