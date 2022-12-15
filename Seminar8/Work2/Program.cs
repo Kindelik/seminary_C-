@@ -28,7 +28,7 @@ int[,] TwoDimArray(int rows, int columns, int leftRange, int rigthRange)  // М�
     return array;
 }
 
-void ReverseRowsColums(int[,] array)
+void ReverseRowsColums(int[,] array)   //Переворот строк в столбцы
 {
     int rowsReverse = array.GetLength(0) - 1;
     int columsReverse = array.GetLength(1) - 1;
