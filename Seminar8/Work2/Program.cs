@@ -30,18 +30,18 @@ int[,] TwoDimArray(int rows, int columns, int leftRange, int rigthRange)  // М�
 
 void ReverseRowsColums(int[,] array)
 {
-    int rowsReverse;
-    int columsReverse;
+    int rowsReverse = array.GetLength(0) - 1;
+    int columsReverse = array.GetLength(1) - 1;
     int temp;
     if (array.GetLength(0) == array.GetLength(1))
     {
-        for (int i = 0; i < array.GetLength(0)/2; i++)
+        for (int i = 0; i < array.GetLength(0); i++)
         {
-            for (int j = 0; j < array.GetLength(1); j++)
+            for (int j = 0; j < i; j++)
             {
                 temp = array[i, j];
-                array[i, j] = array[j, i];
-                array[j, i] = temp;
+                array[i, j] = array[j,i];
+                array[j,i] = temp;
             }
         }
     }
@@ -53,7 +53,7 @@ int n = 4;  // количество столбцов в массиве
 int leftRange = 0;  // значение "от" целых чисел массива
 int rigthRange = 10;  // значение "до" целых чисел массива включительно
 
-int[,] array = TwoDimArray(m,n,leftRange,rigthRange);
+int[,] array = TwoDimArray(m, n, leftRange, rigthRange);
 PrintTwoDimArray(array);
 ReverseRowsColums(array);
 System.Console.WriteLine();
