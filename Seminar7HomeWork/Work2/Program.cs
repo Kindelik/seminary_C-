@@ -53,8 +53,6 @@ void SearchPosition(int position, int[,] array)  // Метод поиска чи
                 {
                     count++;
                 }
-
-
             }
 
         }
