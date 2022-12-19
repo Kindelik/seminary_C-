@@ -56,7 +56,7 @@ while (buffer < row * column + 1)
     }
     if ((rigthLeft == false) & (upDown == true))     //вверх
     {
-        for (int i = countColumn - count; i >= 1 + count; i--)
+        for (int i = countColumn - count; i >= 1 + count; i--)  // ошибка в countColumn = 0 а должен быть равен 4
         {
             buffer++;
             twoArray[i, countColumn] = buffer;
