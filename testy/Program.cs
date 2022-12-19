@@ -121,3 +121,50 @@ for (int k = 0; k < arr.GetLength(2); k++)
 }
 
 PrintThreeDimArray(arr);
+
+
+
+
+/*
+
+по 62 задаче заготовка
+
+if ((rigthLeft) & (upDown))
+{
+    if (rigrhLeft)
+    {
+        if (upDown)             // движемся направо
+        {
+            for (int i = 0; i < twoArray.GetLength(0); i++)
+            {
+                twoArray[countRow, i] = buffer + i;
+                countColumn = i;
+                System.Console.WriteLine($"{twoArray[countRow, i]}{(countRow, i)}");
+            }
+            upDown = false;
+        }
+        else
+        {
+            for (int i = 0; i < twoArray.GetLength(1); i++)           //движемся вниз
+            {
+                twoArray[i, countColumn] = buffer + i;
+                countRow = i;
+                System.Console.WriteLine($"{twoArray[i, countColumn]}{(i, countColumn)}");
+            }
+            upDown = true;
+            rigthLeft = false;
+        }
+    }
+    else
+    {
+        for (int i = countRow; i => 0; i--)        // движемся вправо
+        {
+            twoArray[countRow, i] = buffer + i;
+            countColumn = i;
+            System.Console.WriteLine($"{twoArray[countRow, i]}{(countRow, i)}");
+        }
+        upDown = true;
+    }
+}
+
+*/
