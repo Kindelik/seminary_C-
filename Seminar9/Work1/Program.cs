@@ -2,9 +2,6 @@
 // N = 5 -> "1, 2, 3, 4, 5"
 // N = 6 -> "1, 2, 3, 4, 5, 6"
 
-int number = 10;
-int count = 1;
-
 void NumberPlus(int number, int count)
 {
     if(count <= number)
@@ -16,5 +13,8 @@ void NumberPlus(int number, int count)
     }
 
 }
+
+int number = 10;
+int count = 1;
 
 NumberPlus(number,count);

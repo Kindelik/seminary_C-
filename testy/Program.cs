@@ -1,170 +1,60 @@
-﻿
-/* 
+﻿int row = 4; // количетсво строк в массиве 
+int column = 4;  // количество столбцов в массиве 
 
-int[,,] ThreeDimArray(int length, int heigth, int weigth, int leftRange, int rigthRange)
+int[,] twoArray = new int[row, column];
+int meaning = 0;  // значение которое будем вставлять в массив
+bool rigthLeft = true;
+bool upDown = true;
+int count = 0;
+int countRow = 0; //счетчик проходов и чего то еще
+int countColumn = 0; //счетчик проходов и чего то еще
+
+while (count<3)
 {
-    int[,,] array = new int[length, heigth, weigth];
-    for (int i = 0; i < array.GetLength(0); i++)
+    if ((rigthLeft == true) & (upDown == true))     // двигаемся вправо
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int i = 0 + count; i < 4 - count; i++)
         {
-            for (int k = 0; k < array.GetLength(2); k++)
-            {
-                array[i, j, k] = new Random().Next(leftRange, rigthRange + 1);
-
-            }
-        }
-    }
-        for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            for (int k = 1; k < array.GetLength(2); k++)
-            {
-                if(array[i, j, k] == array[i, j, k-1])
-
-                array[i, j, k] = new Random().Next(leftRange, rigthRange + 1);
-
-            }
-        }
-    }
-return array;
-}
-
-
-int row = 3; // длина массива
-int column = 3;  // ширина массива
-int weigth = 3;  // высота массива
-int leftRange = 1; // значение "от" целых чисел массива
-int rigthRange = 10;  // значение "до" целых чисел массива включительно
-
-int[,,] cubeArray = ThreeDimArray(row, column, weigth, leftRange, rigthRange);
-
-int[] arrRandom = new int[cubeArray.Length];
-int temp = 0;
-for (int i = 0; i < arrRandom.Length; i++)
-{
-    arrRandom[i] = new Random().Next(30);
-    temp = arrRandom[i];
-    if (i >= 1)
-    {
-        for (int j = 0; j < i; j++)
-        {
-            while (arrRandom[i] == arrRandom[j])
-            {
-                arrRandom[i] = new Random().Next(30);
-                j = 0;
-                temp = arrRandom[i];
-            }
-
-            temp = arrRandom[i];
-        }
-    }
-    Console.Write($" {arrRandom[i]} , ");
-}
-
- */
-
-
-static IEnumerable<int> UniqueRandomNumbers(int leftRange, int rigthRange)
-{
-    Random rand = new();
-    int[] values = Enumerable.Range(leftRange, rigthRange).ToArray();
-    int i = values.Length;
-    while (i > 0)
-    {
-        int j = rand.Next(i--);
-        yield return values[j];
- 
-        (values[i], values[j]) = (values[j], values[i]);
-    }
-}
-
-void PrintThreeDimArray(int[,,] array)  // метод вывода двумерного массива в терминал
-{
-    System.Console.WriteLine();
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        System.Console.Write("[");
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            for (int k = 0; k < array.GetLength(2); k++)
-            {
-                System.Console.Write($"{array[i, j, k]}({i},{j},{k}) ");
-                if (k < array.GetLength(2) - 1) System.Console.Write(" ; ");
-            }
-
-        }
-        System.Console.Write("]");
-        System.Console.WriteLine();
-    }
-}
-
-int leftRange = 1; // значение "от" целых чисел массива
-int rigthRange = 10;  // значение "до" целых чисел массива включительно
-
-int[,,] arr = new int[2, 2, 2];
- 
-IEnumerator<int> value = UniqueRandomNumbers(leftRange, rigthRange).GetEnumerator();
- 
-for (int i = 0; i < arr.GetLength(0); i++)
-for (int j = 0; j < arr.GetLength(1); j++)
-for (int k = 0; k < arr.GetLength(2); k++)
-{
-    if (!value.MoveNext())
-    {
-        Console.WriteLine("Упс, уникальные числа закончились!");
-        return;
-    }
- 
-    arr[i, j, k] = value.Current;
-}
-
-PrintThreeDimArray(arr);
-
-
-
-
-/*
-
-по 62 задаче заготовка
-
-if ((rigthLeft) & (upDown))
-{
-    if (rigrhLeft)
-    {
-        if (upDown)             // движемся направо
-        {
-            for (int i = 0; i < twoArray.GetLength(0); i++)
-            {
-                twoArray[countRow, i] = buffer + i;
-                countColumn = i;
-                System.Console.WriteLine($"{twoArray[countRow, i]}{(countRow, i)}");
-            }
-            upDown = false;
-        }
-        else
-        {
-            for (int i = 0; i < twoArray.GetLength(1); i++)           //движемся вниз
-            {
-                twoArray[i, countColumn] = buffer + i;
-                countRow = i;
-                System.Console.WriteLine($"{twoArray[i, countColumn]}{(i, countColumn)}");
-            }
-            upDown = true;
-            rigthLeft = false;
-        }
-    }
-    else
-    {
-        for (int i = countRow; i => 0; i--)        // движемся вправо
-        {
-            twoArray[countRow, i] = buffer + i;
+            meaning++;
+            twoArray[countRow, i] = meaning;
             countColumn = i;
-            System.Console.WriteLine($"{twoArray[countRow, i]}{(countRow, i)}");
+            System.Console.Write($"{twoArray[countRow, i]}{(countRow, i)}"); // проверочный
+        }
+        upDown = false;
+    }
+    if ((rigthLeft == true) & (upDown == false))     // двигаемся вниз
+    {
+        for (int i = 1 + count; i < 4 - count; i++)
+        {
+            meaning++;
+            twoArray[i, countColumn] = meaning;
+            countRow = i;
+            System.Console.Write($"{twoArray[i, countColumn]}{(i, countColumn)}");
+        }
+        rigthLeft = false;
+    }
+    if ((rigthLeft == false) & (upDown == false))     // двигаемся влево
+    {
+        for (int i = 2 - count; i >= 0 + count; i--)
+        {
+            meaning++;
+            twoArray[countRow, i] = meaning;
+            countColumn = i;
+            System.Console.Write($"{twoArray[countRow, i]}{(countRow, i)}");    // проверочный
         }
         upDown = true;
     }
+    if ((rigthLeft == false) & (upDown == true))     // двигаемся вверх
+    {
+        for (int i = 2 - count; i > 0 + count; i--) 
+        {
+            meaning++;
+            twoArray[i, countColumn] = meaning;
+            countRow = i;
+            System.Console.Write($"{twoArray[i, countColumn]}{(i, countColumn)}");
+        }
+        rigthLeft = true;
+        count++;
+    }
 }
 
-*/
