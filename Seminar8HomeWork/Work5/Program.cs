@@ -5,6 +5,22 @@
 // 11 16 15 06
 // 10 09 08 07
 
+void PrintTwoDimArray(int[,] array)  // метод вывода двумерного массива в терминал
+{
+    System.Console.WriteLine();
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        System.Console.Write("[");
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            System.Console.Write($"{array[i, j]}");
+            if (j < array.GetLength(1) - 1) System.Console.Write(" ; ");
+        }
+        System.Console.Write("]");
+        System.Console.WriteLine();
+    }
+}
+
 
 // Я в курсе что не стоит столько коментариев оставлять, но потом я хочу сделать на основе этой задачи метод, для матрицы любого размера
 
@@ -69,6 +85,7 @@ while (count < 3)
     }
 }
 
+PrintTwoDimArray(twoArray);
 
 
 
