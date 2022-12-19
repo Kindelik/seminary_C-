@@ -115,15 +115,12 @@ void PasteInArray(int[,,] arrayCube, int[] array)
     }
 }
 
-
 int row = 2; // длина массива
 int column = 2;  // ширина массива
 int weigth = 2;  // высота массива
 int leftRange = 0; // значение "от" целых чисел массива
-int rigthRange = 10;  // значение "до" целых чисел массива включительно
-
+int rigthRange = 9;  // значение "до" целых чисел массива включительно
 int[,,] cubeArray = new int[row, column, weigth];
-PrintThreeDimArray(cubeArray);
 int[] arrayNoRepeat = NotRepeatingRandom(row, column, weigth, leftRange, rigthRange);
 PasteInArray(cubeArray,arrayNoRepeat);
 PrintThreeDimArray(cubeArray);
