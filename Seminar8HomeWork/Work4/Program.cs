@@ -116,11 +116,11 @@ void PasteInArray(int[,,] arrayCube, int[] array)
 }
 
 
-int row = 3; // длина массива
-int column = 3;  // ширина массива
-int weigth = 3;  // высота массива
-int leftRange = 1; // значение "от" целых чисел массива
-int rigthRange = 99;  // значение "до" целых чисел массива включительно
+int row = 2; // длина массива
+int column = 2;  // ширина массива
+int weigth = 2;  // высота массива
+int leftRange = 0; // значение "от" целых чисел массива
+int rigthRange = 10;  // значение "до" целых чисел массива включительно
 
 int[,,] cubeArray = new int[row, column, weigth];
 PrintThreeDimArray(cubeArray);
