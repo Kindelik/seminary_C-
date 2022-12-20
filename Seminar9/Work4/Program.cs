@@ -11,7 +11,7 @@ int DataEntry(string messag)
 
 int SumNumber(int number, int power)
 {
-    if (power < 2) return number;
+    if (power < 2) return ;
     return SumNumber(number, power- 1)*number;
 
 }
